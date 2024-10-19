@@ -1,0 +1,22 @@
+{
+    "map": {
+        "cat": 0,
+        "dog": 1
+    },
+    "unmap": {
+        "0": "cat",
+        "1": "dog"
+    },
+    "distribution": {
+        "cat": 12490,
+        "dog": 12490
+    },
+    "total": 24980,
+    "train_size": 19984,
+    "test_size": 3331,
+    "valid_size": 1665,
+    "width": 404,
+    "height": 360,
+    "info_path": "cache\\Animals-info.json",
+    "map_path": "cache\\Animals-map.json"
+}

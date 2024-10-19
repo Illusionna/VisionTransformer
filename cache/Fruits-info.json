@@ -1,0 +1,31 @@
+{
+    "map": {
+        "Apple": 0,
+        "Carambola": 1,
+        "Pear": 2,
+        "Plum": 3,
+        "Tomatoes": 4
+    },
+    "unmap": {
+        "0": "Apple",
+        "1": "Carambola",
+        "2": "Pear",
+        "3": "Plum",
+        "4": "Tomatoes"
+    },
+    "distribution": {
+        "Apple": 11144,
+        "Carambola": 2080,
+        "Pear": 3012,
+        "Plum": 2298,
+        "Tomatoes": 2171
+    },
+    "total": 20705,
+    "train_size": 16564,
+    "test_size": 2761,
+    "valid_size": 1380,
+    "width": 270,
+    "height": 180,
+    "info_path": "cache\\Fruits-info.json",
+    "map_path": "cache\\Fruits-map.json"
+}

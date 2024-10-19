@@ -1,0 +1,40 @@
+ViT(
+  (to_patch_embedding): Sequential(
+    (0): Rearrange('b c (h p1) (w p2) -> b (h w) (p1 p2 c)', p1=32, p2=32)
+    (1): LayerNorm((3072,), eps=1e-05, elementwise_affine=True)
+    (2): Linear(in_features=3072, out_features=128, bias=True)
+    (3): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+  )
+  (transformer): Linformer(
+    (net): SequentialSequence(
+      (layers): ModuleList(
+        (0-11): 12 x ModuleList(
+          (0): PreNorm(
+            (fn): LinformerSelfAttention(
+              (to_q): Linear(in_features=128, out_features=128, bias=False)
+              (to_k): Linear(in_features=128, out_features=128, bias=False)
+              (to_v): Linear(in_features=128, out_features=128, bias=False)
+              (dropout): Dropout(p=0.0, inplace=False)
+              (to_out): Linear(in_features=128, out_features=128, bias=True)
+            )
+            (norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+          )
+          (1): PreNorm(
+            (fn): FeedForward(
+              (w1): Linear(in_features=128, out_features=512, bias=True)
+              (act): GELU(approximate='none')
+              (dropout): Dropout(p=0.0, inplace=False)
+              (w2): Linear(in_features=512, out_features=128, bias=True)
+            )
+            (norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+          )
+        )
+      )
+    )
+  )
+  (to_latent): Identity()
+  (mlp_head): Sequential(
+    (0): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+    (1): Linear(in_features=128, out_features=5, bias=True)
+  )
+)
