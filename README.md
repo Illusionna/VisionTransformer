@@ -1,3 +1,7 @@
+> 源链接：https://www.orzzz.net/directory/codes/VisionTransformer/index.html
+
+<br>
+
 # 1. 介绍
 
 2023-11-25 我在 GitHub 上提交了 [EfficientTransformer](https://github.com/Illusionna/ComputerVision/tree/main/EfficientTransformer) 的比赛代码，近一年后的今天，我在删除电脑磁盘上吃灰的文件时，再次发现到它。由于去年写的函数接口很简约，所以这次重写 ViT 代码，修改了很多冗余的语句，并在其他图片集上进行测试，没想到这个神经网络模型效果依然这么好。
