@@ -211,7 +211,7 @@ if __name__ == '__main__':
 
 # 5. 训练
 
-`"./cache/log"` 文件夹的 Animals.pt 和 Fruits.pt 是我已经训练 200 轮后，得到了非常好的权重文件，你可以直接拿这两个权重文件进行测试、预测，跳过训练环节。毕竟，训练是很耗时间的。
+`"./cache/log"` 文件夹的 Animals.pt、Fruits.pt 和 Bloodcells.pt 是我已经训练 200 轮后，得到了非常好的权重文件，你可以直接拿这两个权重文件进行测试、预测，跳过训练环节。毕竟，训练是很耗时间的。
 
 如果你想重头开始进行水果、动物、血细胞图片集训练，或者对自己的数据集进行训练，你可以在 Preprocessing.py 完成后，执行 Train.py 文件。
 
@@ -257,7 +257,7 @@ if __name__ == '__main__':
 
 <p style="text-align: center;"><img src="./docs/Trained-Fruits.png" alt="Oops?" width="100%"></p>
 
-上面这三张连续图片是我对 Animals 和 Fruits 两类图片集各训练 200 次的过程，其中 Animals 耗时 03:31:17 较长， Fruits 训练耗时 01:54:29 较短。
+上面这三张连续图片是我对 Animals 和 Fruits 两类图片集各训练 200 次的过程，其中 Animals 耗时 03:31:17 较长， Fruits 训练耗时 01:54:29 较短，Bloodcells 训练耗时 02:25:42 适中。
 
 程序代码自动将训练结果全部保存在 `"./cache"` 目录下，其中子文件夹 `log` 是存放训练权重，你可以看到 `log` 里的动物和水果权重，这是我训练出的最优权重。
 
