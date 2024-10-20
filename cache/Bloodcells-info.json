@@ -1,0 +1,40 @@
+{
+    "map": {
+        "basophil": 0,
+        "eosinophil": 1,
+        "erythroblast": 2,
+        "ig": 3,
+        "lymphocyte": 4,
+        "monocyte": 5,
+        "neutrophil": 6,
+        "platelet": 7
+    },
+    "unmap": {
+        "0": "basophil",
+        "1": "eosinophil",
+        "2": "erythroblast",
+        "3": "ig",
+        "4": "lymphocyte",
+        "5": "monocyte",
+        "6": "neutrophil",
+        "7": "platelet"
+    },
+    "distribution": {
+        "basophil": 1218,
+        "eosinophil": 3117,
+        "erythroblast": 1551,
+        "ig": 2895,
+        "lymphocyte": 1214,
+        "monocyte": 1420,
+        "neutrophil": 3329,
+        "platelet": 2348
+    },
+    "total": 17092,
+    "train_size": 13674,
+    "test_size": 2279,
+    "valid_size": 1139,
+    "width": 360,
+    "height": 363,
+    "info_path": "cache\\Bloodcells-info.json",
+    "map_path": "cache\\Bloodcells-map.json"
+}
